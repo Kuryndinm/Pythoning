@@ -1,0 +1,4 @@
+from math import sqrt
+for i in range(1729, 3000):
+    if sqrt(i) % 1 == 0:
+        print(i)

@@ -1,0 +1,19 @@
+import datetime
+
+def expire(items, in_advance_days=0):
+    list_of_expired_products = list()
+    current_date = datetime.date.today()
+    future_date = current_date + datetime.timedelta(in_advance_days)
+    trash = ...
+    2
+    for name_of_product, products_data in items.items():
+        for product in products_data:
+            date_of_expiration = product['expiration_date']
+            
+            if date_of_expiration == None:
+                continue
+            elif date_of_expiration <= future_date:
+                
+                list_of_expired_products += [(name_of_product, amount(items, name_of_product))]
+            
+    return list_of_expired_products
