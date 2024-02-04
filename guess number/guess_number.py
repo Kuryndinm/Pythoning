@@ -15,7 +15,7 @@ def guess_number_game(guess_number, user_number, check):
 
 
 
-
+  # Прогон через цикл while
 
 while not check:
     print(guess_number_game(guess_number, int(input()), check)) 
